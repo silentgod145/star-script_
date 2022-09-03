@@ -1,0 +1,24 @@
+--Local WhiteList--
+
+
+
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Mapple7777/UI-Librarys/main/UI-1/UI.lua"))()
+--local Whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/silentgod145/whitelist/main/whitelist",true))()
+
+local Window = Library:Create("STAR","SCRIPT")
+
+local Tab1 = Window:Tab("Free Hacks",true)
+
+Tab1:Toggle("Star Emoji On/Off",function(bool)
+Wait(9)
+print("Star Activated")
+end)
+local Tab2 = Window:Tab("Close",false)
+
+Tab2:Label("Keybind")
+
+Tab2:Keybind("Toggle",Enum.KeyCode.RightShift,function()
+    Library:Toggle()
+end)
